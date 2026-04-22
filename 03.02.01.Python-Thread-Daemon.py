@@ -2,9 +2,9 @@ import threading
 import time
 
 def heartbeat():
-    while True:
-        print("Robot alive...")
-        time.sleep(0.1)
+    # while True:
+    time.sleep(1.1)
+    print("Robot alive...")
 
 # daemon=True 로 생성 시 설정
 t = threading.Thread(target=heartbeat, daemon=True)
